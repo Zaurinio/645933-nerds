@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Заур Хутинаев](https://up.htmlacademy.ru/htmlcss/21/user/645933).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Фарига](https://htmlacademy.ru/profile/maximfariga).
 
 ---
 
