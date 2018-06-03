@@ -6,7 +6,134 @@
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <head class="main-header">
+    	<nav class="main-navigation">
+    		<a class="main-header-logo">
+    			<img src="img/index-logo.svg" width="100" height="100" alt="Логотип студии "Nerd's"">
+    			<!--размеры прописал случайным образом-->
+    		</a>
+
+    	<ul class="site-navigation">
+    		<li><a href="info.html">Студия</a></li>
+    		<li><a href="clients.html">Клиенты</a></li>
+    		<li><a href="store.html">Магазин</a></li>
+    		<li><a href="contacts.html">Контакты</a></li>
+    	</ul>
+
+    	<ul class="site-navigation">
+    		<li class="cart"><a href="cart.html">Корзина</a></li>
+    	</ul>
+    	</nav>
+    </head>
+
+    <main class="container">
+    	<h1 class="visually-hidden">Дизайн-студия Nerd's</h1>
+    	<section class="advantages">
+    		<h2 class="visually-hidden">Наши преимущества</h2>
+    		<p class="advantages-slogan">Долго, дорого, скрупулезно.</p>
+    		<p class="advantages-descriprion">Математически выверенный дизайн для вашего сайта или мобильного предложения</p>
+
+    		<p class="advantages-information">
+    			<a href="#" class="button">Узнать больше</a>
+    		</p>
+    	</section>
+
+    	<section class="services">
+    		<h2>Услуги</h2>
+    		<ul services-list>
+    			<li class="services-item services-item-websites">
+    				<h3>Веб-сайты</h3>
+    				<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+    				<p class="services-image services-image-websites">
+    					<img src="img/service-1.jpg" width="100" height="100" alt="Создание веб-сайтов">
+    				</p>
+    				<p class="services-order services-order-websites">
+    					<a href="#" class="button">Заказать</a>
+    				</p>
+    			</li>
+    			<li class="services-item services-item-applications">
+    				<h3>Приложения</h3>
+    				<p>Покорите Топ-10 приложений в AppStore и Google Play</p>
+    				<p class="services-image services-image-applications">
+    					<img src="img/service-2.jpg" width="100" height="100" alt="Создание приложений">
+    				</p>
+    				<p class="services-order services-order-applications">
+    					<a href="#" class="button">Заказать</a>
+    				</p>
+    			</li>
+    			<li class="services-item services-item-presentations">
+    				<h3>Презентации</h3>
+    				<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+    				<p class="services-image services-image-presentations">
+    					<img src="img/service-3.jpg" width="100" height="100" alt="Создание презентаций">
+    				</p>
+    				<p class="services-order services-order-presentations">
+    					<a href="#" class="button">Заказать</a>
+    				</p>
+    			</li>
+    		</ul>
+    	</section>
+
+    	<section class="about_us">
+    		<h2 class="visually-hidden">О нас</h2>
+    		<p class="about_us-slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+    		<p class="about_us-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+    		<p class="about_us-services">Выполняем заказы на разработку</p>
+    		<ul class="about_us-services_list">
+    			<li>Веб-сайтов любой сложности</li>
+    			<li>Мобильных приложений для IOS и Android</li>
+    			<li>Слайдшоу и видео для корпоративных презентаций</li>
+    		</ul>
+    	</section>
+
+    	<div class="statstics">
+    		<p>С 2004 года любим точность во всем:</p>
+    		<table>
+    			<tr>
+    				<th>146%</th>
+    				<th>100%</th>
+    				<th>50%</th>
+    			</tr>
+    			<tr>
+    				<td>Уровень самоотдачи</td>
+    				<td>Соблюдение сроков</td>
+    				<td>Минимальная предоплата</td>
+    			</tr>
+    		</table>
+    	</div>
+
+    </main>
+
+    <footer class="main-footer">
+    	 <div class="footer-social">
+          <ul>
+          	<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+          	<li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
+          	<li><a class="social-button social-button-inst" href="#">Инстаграм</a></li>
+        </ul>
+      </div>
+
+      <div class="friendship">
+      	<b>Давайте дружить, это выгодно!</b>
+      	<p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+
+    <section class="modal modal-map">
+  			<h2 class="visually-hidden">Как до нас добраться</h2>
+  			<p class="contacts">
+  				NЁRD'S DESIGN STUDIO<br>
+  				191186, Санкт-Петербург,<br>
+  				ул. Б. Конюшенная, д. 19/8<br>
+  				тел. +7(812)275-75-75
+  			</p>
+
+  			<p class="feedback">
+  				<a href="#" class="button">Напишите нам</a>
+  			</p>
+  		</section>
 
   </body>
 </html>
+
+
