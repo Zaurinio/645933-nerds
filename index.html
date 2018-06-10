@@ -6,135 +6,145 @@
   </head>
   <body>
 
-    <header> class="main-header">
-    	<nav class="main-navigation">
-    		<a class="main-header-logo">
-    			<img src="img/index-logo.svg" width="100" height="100" alt="Логотип студии Nerd's">
-    			<!--размеры прописал случайным образом-->
-    		</a>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/index-logo.svg" width="100" height="100" alt="Логотип студии Nerd's">
+          <!--размеры прописал случайным образом-->
+        </a>
 
-    	<ul class="site-navigation">
-    		<li><a href="info.html">Студия</a></li>
-    		<li><a href="clients.html">Клиенты</a></li>
-    		<li><a href="store.html">Магазин</a></li>
-    		<li><a href="contacts.html">Контакты</a></li>
-    	</ul>
+      <ul class="site-navigation">
+        <li><a href="info.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
 
-    	<ul class="user-navigation">
-    		<li class="cart"><a href="cart.html">Корзина</a></li>
-    	</ul>
-    	</nav>
+      <ul class="user-navigation">
+        <li class="cart"><a href="cart.html">Корзина</a></li>
+      </ul>
+      </nav>
     </header>
 
     <main class="container">
-    	<h1 class="visually-hidden">Дизайн-студия Nerd's</h1>
-    	<section class="advantages">
-    		<h2 class="visually-hidden">Наши преимущества</h2>
+      <h1 class="visually-hidden">Дизайн-студия Nerd's</h1>
+      <section class="advantages">
+        <h2 class="visually-hidden">Наши преимущества</h2>
 
-            <div class="advantages-item-1">
-    		  <p class="advantages-slogan-1">Долго, дорого, скрупулезно.</p>
-    		  <p class="advantages-descriprion-1">Математически выверенный дизайн для вашего сайта или мобильного предложения</p>
-                <figure class="advantages-figure-1">
+        <ul class="advantages-list">
+
+          <li class="advantages-item">
+          <p class="advantages-slogan">Долго, дорого, скрупулезно.</p>
+          <p class="advantages-descriprion">Математически выверенный дизайн для вашего сайта или мобильного предложения</p>
+                <figure class="advantages-img">
                     <img src="advantages-figure-1.jpg" width="100" height="100" alt="Первое преимущество">
                 </figure>
-            </div>
+                <p class="advantages-information">
+                <a href="#" class="button">Узнать больше</a>
+                </p>
+          </li>
 
-            <div class="advantages-item-2">
-                <p class="advantages-slogan-2">Любим математику как никто другой</p>
-                <p class="advantages-descriprion-2">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-                <figure class="advantages-figure-2">
+          <li class="advantages-item">
+                <p class="advantages-slogan">Любим математику как никто другой</p>
+                <p class="advantages-descriprion">Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
+                <figure class="advantages-img">
                     <img src="advantages-figure-2.jpg" width="100" height="100" alt="Второе преимущество">
                 </figure>
-            </div>
+                <p class="advantages-information">
+                <a href="#" class="button">Узнать больше</a>
+                </p>
+          </li>
 
-            <div class="advantages-item-3">
-                <p class="advantages-slogan-3">Только ночь, только хардкор</p>
-                <p class="advantages-descriprion-3">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <figure class="advantages-figure-3">
+          <li class="advantages-item">
+                <p class="advantages-slogan">Только ночь, только хардкор</p>
+                <p class="advantages-descriprion">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <figure class="advantages-img">
                     <img src="advantages-figure-3.jpg" width="100" height="100" alt="Третье преимущество">
                 </figure>
-            </div>
+                 <p class="advantages-information">
+                <a href="#" class="button">Узнать больше</a>
+                </p>
+          </li>
 
             <!-- Здесь будет слайдер -->
 
+        </ul>
+      </section>
 
-    		<p class="advantages-information">
-    			<a href="#" class="button">Узнать больше</a>
-    		</p>
-    	</section>
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services-list">
+          <li class="services-item services-item-websites">
+            <h3 class="services-title">Веб-сайты</h3>
+            <p class="services-slogan">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <figure class="services-image"> <!-- Добавлял доп. классы к figure для стилизации объектов в css -->
+              <img src="img/service-1.jpg" width="100" height="100" alt="Создание веб-сайтов">
+            </figure>
+            <p class="services-order">
+              <a href="#" class="button button-red">Заказать</a>
+            </p>
+          </li>
+          <li class="services-item services-item-applications">
+            <h3 class="services-title">Приложения</h3>
+            <p class="services-slogan">Покорите Топ-10 приложений в AppStore и Google Play</p>
+            <figure class="services-image"> <!-- Добавлял доп. классы к figure для стилизации объектов в css -->
+              <img src="img/service-2.jpg" width="100" height="100" alt="Создание приложений">
+            </figure>
+            <p class="services-order">
+              <a href="#" class="button button-green">Заказать</a>
+            </p>
+          </li>
+          <li class="services-item services-item-presentations">
+            <h3 class="services-title">Презентации</h3>
+            <p class="services-slogan">Вы даже не подозреваете, насколько вы изумительны!</p>
+            <figure class="services-image"> <!-- Добавлял доп. классы к figure для стилизации объектов в css -->
+              <img src="img/service-3.jpg" width="100" height="100" alt="Создание презентаций">
+            </figure>
+            <p class="services-order">
+              <a href="#" class="button button-yellow">Заказать</a>
+            </p>
+          </li>
+        </ul>
+      </section>
 
-    	<section class="services">
-    		<h2 class="visually-hidden">Услуги</h2>
-    		<ul class="services-list">
-    			<li class="services-item services-item-websites">
-    				<h3 class="services-title">Веб-сайты</h3>
-    				<p class="services-slogan">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-    				<figure class="services-image services-image-websites">
-    					<img src="img/service-1.jpg" width="100" height="100" alt="Создание веб-сайтов">
-    				</figure>
-    				<p class="services-order">
-    					<a href="#" class="button button-red">Заказать</a>
-    				</p>
-    			</li>
-    			<li class="services-item services-item-applications">
-    				<h3 class="services-title">Приложения</h3>
-    				<p class="services-slogan">Покорите Топ-10 приложений в AppStore и Google Play</p>
-    				<figure class="services-image services-image-applications">
-    					<img src="img/service-2.jpg" width="100" height="100" alt="Создание приложений">
-    				</figure>
-    				<p class="services-order">
-    					<a href="#" class="button button-green">Заказать</a>
-    				</p>
-    			</li>
-    			<li class="services-item services-item-presentations">
-    				<h3 class="services-title">Презентации</h3>
-    				<p class="services-slogan">Вы даже не подозреваете, насколько вы изумительны!</p>
-    				<figure class="services-image services-image-presentations">
-    					<img src="img/service-3.jpg" width="100" height="100" alt="Создание презентаций">
-    				</figure>
-    				<p class="services-order">
-    					<a href="#" class="button button-yellow">Заказать</a>
-    				</p>
-    			</li>
-    		</ul>
-    	</section>
-
-    	<section class="about-us">
-    		<h2 class="visually-hidden">О нас</h2>
+      <section class="about-us">
+        <h2 class="visually-hidden">О нас</h2>
             <section class="about-us-description">
-    		<p class="about-us-slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
-    		<p class="about-us-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-    		<div class="about-us-services">
+        <p class="about-us-slogan">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about-us-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+        <div class="about-us-services">
             <p class="about-us-title">Выполняем заказы на разработку</p>
-    		<ul class="about-us-list">
-    			<li>Веб-сайтов любой сложности</li>
-    			<li>Мобильных приложений для IOS и Android</li>
-    			<li>Слайдшоу и видео для корпоративных презентаций</li>
-    		</ul>
+        <ul class="about-us-list">
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для IOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных презентаций</li>
+        </ul>
             </div>
-    	    </section>
-        </section>
+          </section>
 
-        <section class="about-us-info">
-    	    <figure class="about-us-image">
+          <section class="about-us-info">
+          <figure class="about-us-image">
                 <img src="img/about-us-image.svg" alt="Логотип студии Nerd's">
             </figure>
             <div class="about-us-results">
-    		<p>С 2004 года любим точность во всем:</p>
-    		<table class="statistics">
-    			<tr>
-    				<th>146%</th>
-    				<th>100%</th>
-    				<th>50%</th>
-    			</tr>
-    			<tr>
-    				<td>Уровень самоотдачи</td>
-    				<td>Соблюдение сроков</td>
-    				<td>Минимальная предоплата</td>
-    			</tr>
-    		</table>
+        <p>С 2004 года любим точность во всем:</p>
+        <table class="statistics">
+          <tr>
+            <th>146%</th>
+            <th>100%</th>
+            <th>50%</th>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
             </div>
-    	</section>
+          </section>
+      </section>
+
+
 
 
         <section class="partners">
@@ -159,30 +169,27 @@
             <p class="contacts-phone">
                 тел. +7(812)275-75-75
             </p>
-            </div>
-
             <p class="feedback">
                 <a href="#" class="button">Напишите нам</a>
             </p>
+            </div>
         </section>
 
     </main>
 
     <footer class="main-footer">
-    	<ul class="footer-social">
-          	<li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
-          	<li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
-          	<li><a class="social-button social-button-inst" href="#">Инстаграм</a></li>
+      <ul class="footer-social">
+            <li><a class="social-button social-button-vk" href="#">Вконтакте</a></li>
+            <li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
+            <li><a class="social-button social-button-inst" href="#">Инстаграм</a></li>
         </ul>
-      
+
 
       <div class="friendship">
-      	<p class="friendship-slogan">Давайте дружить, это выгодно!</p>
-      	<p class="friendship-offer">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="friendship-slogan">Давайте дружить, это выгодно!</p>
+        <p class="friendship-offer">Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
 
    </body>
 </html>
-
-
