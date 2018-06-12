@@ -35,8 +35,57 @@
       <div class="content">
 
       <section class="filters">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!--Здесь будет форма-->
+
+        <input type="range" name="filter-price" min="1" max="15000">
+
+        <fieldset>
+          <legend>Сетка:</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="radio" name="adaptive" class="visually-hidden filter-input filter-input-radio" id="filter-adaptive">
+              <label for="filter-adaptive">Адаптивная</label>
+            </li>
+            <li class="filter-option">
+              <input type="radio" name="fixed" class="visually-hidden filter-input filter-input-radio" id="filter-fixed">
+              <label for="filter-fixed">Фиксированная</label>
+            </li>
+            <li class="filter-option">
+              <input type="radio" name="flexible" class="visually-hidden filter-input filter-input-radio" id="filter-flexible">
+              <label for="filter-flexible">Резиновая</label>
+          </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Особенности:</legend>
+          <ul>
+            <li class="filter-option">
+              <input type="checkbox" name="slider" class="visually-hidden filter-input filter-input-checkbox" id="filter-slider" checked>
+              <label for="filter-slider">Слайдер</label>              
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="advantages" class="visually-hidden filter-input filter-input-checkbox" id="filter-advantages">
+              <label for="filter-advantages">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="news" class="visually-hidden filter-input filter-input-checkbox" id="filter-news" checked>
+              <label for="filter-news">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="gallery" class="visually-hidden filter-input filter-input-checkbox" id="filter-gallery">
+              <label for="filter-gallery"">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input type="checkbox" name="cart" class="visually-hidden filter-input filter-input-checkbox" id="filter-cart">
+              <label for="filter-cart">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+        </form>
+        
       </section>
 
       <section class="catalog">
