@@ -1,0 +1,272 @@
+Папка для стилевых файлов.
+
+--
+
+Пример структуры файлов:
+
+css/
+| - style.css
+| - [другие *.css файлы]
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto Regular", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #283136;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover {
+  color: #fb565a;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus {
+	color: 000000;
+	opacity: 0.3;
+}
+
+.advantages-list,
+.services-list,
+.about-us-list {
+	list-style: none;
+}
+
+.advantages-list {
+	text-align: left;
+}
+
+.advantages-slogan {
+	font-size: 55px;
+  line-height: 55px;
+}
+
+.advantages {
+	background-color: #eeeeee;	
+}
+
+.services-title {
+	font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #fb565a;
+  border: none;
+}
+
+.button-green {
+	background-color: #00ca74;
+}
+
+.button-yellow {
+	background-color: #efc84a;
+}
+
+.button:hover {
+	background-color: #e74246;
+}
+
+.button:focus {
+	background-color: #d7373b;
+}
+
+.button-green:hover {
+	background-color: #00bc6c;
+}
+
+.button-green:focus {
+	background-color: #00aa62;
+}
+
+.button-yellow:hover {
+	background-color: #eab534;
+}
+
+.button-yellow:focus {
+	background-color: #e5a722;
+}
+
+.about-us-slogan {
+	font-size: 45px;
+  line-height: 45px;
+}
+
+.about-us-title {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.about-us-results p {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.statistics th {
+	font-size: 45px;
+  line-height: 10px;
+}
+
+.partners-list {
+list-style: none;
+}
+
+.partners-list a {	
+	opacity: 0.2;
+}
+
+.partners-list a:hover {
+	opacity: 1;
+}
+
+.partners-list a:focus {
+	opacity: 0.1;
+}
+
+.contacts-title {
+	font-weight: bold;
+}
+
+.footer-social {
+	list-style: none;
+}
+
+.friendship-slogan {
+	font-size: 36px;
+  line-height: 36px;
+}
+
+.social-button {
+	color: #e1e1e1;
+}
+
+.social-button:hover {
+	color: #e74246;
+}
+
+.social-button:focus {
+	color: #d7373b;
+}
+
+.container h1 {
+	font-size: 55px;
+  	line-height: 55px;
+}
+
+.container h1 {
+	background-color: #eeeeee;
+}
+
+legend {
+	font-size: 18px;
+  	line-height: 30px;
+  	text-transform: uppercase;
+  	font-weight: bold;
+}
+
+.filter-option {
+	list-style: none;
+}
+
+
+.filter-button {
+	background-color: #eeeeee;
+	color: #000000;
+	font-weight: bold;
+}
+
+.filter-button:hover {
+	background-color: #dfdfdf;
+}
+
+.filter-button:focus {
+	background-color: #d5d5d5;
+	box-shadow: 0 -3px 0 0 #bfbfbf;
+}
+
+.sorting-type,
+.sorting-direction {
+	list-style: none;
+}
+
+.catalog-list {
+	list-style: none;
+}
+
+.sorting-type,
+.sorting-direction {
+	color: #000000;
+	opacity: 0.3;
+	text-transform: uppercase;
+}
+
+.sorting-type a:hover,
+.sorting-direction a:hover {
+	opacity: 0.6;	
+}
+
+.sorting-type a:focus,
+.sorting-direction a:focus {
+	opacity: 1;
+	color: #000000;
+}
+
+.pagination {
+	list-style: none;
+}
+
+.pagination a {
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.pagination a:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination a:focus {
+	background-color: #d5d5d5;
+	box-shadow: 0 -3px 0 0 #bfbfbf;
+}
+
+.catalog-item-price a:focus {
+	box-shadow: 0 -3px 0 0 #c13135;
+}
