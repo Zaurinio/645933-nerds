@@ -1,24 +1,25 @@
-Папка для стилевых файлов.
 
---
+html {
+	box-sizing: border-box;
+}
 
-Пример структуры файлов:
-
-css/
-| - style.css
-| - [другие *.css файлы]
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
 
 
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto Regular", Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #283136;
-  text-transform: uppercase;
+  
 
   background-color: #ffffff;
 }
@@ -30,9 +31,7 @@ a {
 .main-navigation {
   font-size: 16px;
   line-height: 30px;
-  color: #000000;
-
-  background-color: #eeeeee;
+  color: #000000;  
 }
 
 .site-navigation,
@@ -40,11 +39,12 @@ a {
   list-style: none;
   margin: 0;
   padding: 0;
+  font-weight: 500;
 }
 
 .site-navigation a,
 .user-navigation a {
-  color: #000000;
+  color: inherit;
 }
 
 .site-navigation a:hover,
@@ -52,10 +52,10 @@ a {
   color: #fb565a;
 }
 
-.site-navigation a:focus,
-.user-navigation a:focus {
-	color: 000000;
-	opacity: 0.3;
+.site-navigation a:active,
+.user-navigation a:active {
+	color: rgba(0, 0, 0, .3);
+	
 }
 
 .advantages-list,
@@ -73,80 +73,101 @@ a {
 .advantages-slogan {
 	font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
+  color: #000000;
 }
 
 .advantages {
 	background-color: #eeeeee;	
 }
 
+.advantages-information {
+	font-weight: 500;
+}
+
 .services-title {
 	font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: 700;
+  color: #000000;
+}
+
+.services-order {
+	font-weight: 500;
 }
 
 .button {
-  font: inherit;
-
   text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
+  color: rgba(255, 255, 255);
   text-transform: uppercase;
 
   background-color: #fb565a;
   border: none;
-}
 
-.button-green {
-	background-color: #00ca74;
-}
-
-.button-yellow {
-	background-color: #efc84a;
 }
 
 .button:hover {
 	background-color: #e74246;
 }
 
-.button:focus {
+.button:active {
 	background-color: #d7373b;
+	color: rgba(255, 255, 255, .3);
+	box-shadow: inset 0 3px 0 0 #c13135;
+}
+
+
+.button-green {
+	background-color: #00ca74;
 }
 
 .button-green:hover {
 	background-color: #00bc6c;
 }
 
-.button-green:focus {
+.button-green:active {
 	background-color: #00aa62;
+	box-shadow: inset 0 3px 0 0 #009958;
+}
+
+.button-yellow {
+	background-color: #efc84a;
 }
 
 .button-yellow:hover {
 	background-color: #eab534;
 }
 
-.button-yellow:focus {
+.button-yellow:active {
 	background-color: #e5a722;
+	box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
 .about-us-slogan {
 	font-size: 45px;
-  line-height: 45px;
+  	line-height: 45px;
+  	font-weight: 500;
+  	color: #000000;
 }
 
 .about-us-title {
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;
+	color: #000000;
 }
 
 .about-us-results p {
+	color: #000000;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 700;	
 }
 
 .statistics th {
 	font-size: 45px;
-  line-height: 10px;
+  	line-height: 45px;
+  	font-weight: 700;
+  	color: #000000;
 }
 
 .partners-list {
@@ -166,7 +187,11 @@ list-style: none;
 }
 
 .contacts-title {
-	font-weight: bold;
+	font-size: 18px;
+  	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
 }
 
 .footer-social {
@@ -176,6 +201,8 @@ list-style: none;
 .friendship-slogan {
 	font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
+  color: #000000;
 }
 
 .social-button {
@@ -186,24 +213,31 @@ list-style: none;
 	color: #e74246;
 }
 
-.social-button:focus {
-	color: #d7373b;
+.social-button:active {
+	color: rgba(215, 55, 59, .3);
+
 }
 
-.container h1 {
+.container-title h1 {
 	font-size: 55px;
-  	line-height: 55px;
+  	line-height: 55px; 
+  	vertical-align: middle; 	 	
 }
 
-.container h1 {
-	background-color: #eeeeee;
+.container {
+	/*убрал заливку background-color: #eeeeee; т.к использовал контейнер для центрирования боков "услуги" и "О нас" и пр.*/
 }
 
 legend {
 	font-size: 18px;
   	line-height: 30px;
   	text-transform: uppercase;
-  	font-weight: bold;
+  	font-weight: 700;
+  	color: #000000;
+}
+
+.sorting-rule {
+	font-weight: 700;
 }
 
 .filter-option {
@@ -212,18 +246,21 @@ legend {
 
 
 .filter-button {
-	background-color: #eeeeee;
+	background-color: #eeeeee;	
+	font-weight: 500;
 	color: #000000;
-	font-weight: bold;
+
 }
 
 .filter-button:hover {
 	background-color: #dfdfdf;
+	color: #000000;
 }
 
-.filter-button:focus {
+.filter-button:active {
 	background-color: #d5d5d5;
-	box-shadow: 0 -3px 0 0 #bfbfbf;
+	box-shadow: inset 0 3px 0 0 #bfbfbf;
+	color: rgba(0, 0, 0, .3);
 }
 
 .sorting-type,
@@ -239,28 +276,35 @@ legend {
   	flex-wrap: wrap;
   	justify-content: space-between;
 }
+
+.catalog-item-title {
+	font-weight: 700;
+	color: #000000;
 }
 
-.sorting-type,
-.sorting-direction {
-	color: #000000;
-	opacity: 0.3;
-	text-transform: uppercase;
+.catalog-item-price {
+	font-weight: 500;
+}
+
+.sorting-type a,
+.sorting-direction a {
+	color: rgba(0,0,0,.3);
+	text-transform: uppercase;		
 }
 
 .sorting-type a:hover,
 .sorting-direction a:hover {
-	opacity: 0.6;	
+	color: rgba(0,0,0,.6);
 }
 
-.sorting-type a:focus,
-.sorting-direction a:focus {
-	opacity: 1;
-	color: #000000;
+.sorting-type a:active,
+.sorting-direction a:active {
+	color: rgba(0,0,0,1);
 }
 
 .pagination {
 	list-style: none;
+	font-weight: 500;
 }
 
 .pagination a {
@@ -272,14 +316,11 @@ legend {
 	background-color: #dfdfdf;
 }
 
-.pagination a:focus {
+.pagination a:active {
 	background-color: #d5d5d5;
-	box-shadow: 0 -3px 0 0 #bfbfbf;
+	box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
-.catalog-item-price a:focus {
-	box-shadow: 0 -3px 0 0 #c13135;
-}
 
 
 /*сеточные стили*/
@@ -290,13 +331,12 @@ legend {
 
 	 /* Временно для сетки */
 	min-height: 116px;
+	background: #eeeeee;
 }
 
 .main-navigation {
 	display: flex;
-	flex-direction: column;
-	 /* Временно для сетки */
-	min-height: 116px;
+	align-items: center;	
 }
 
 .main-header-logo {
@@ -322,16 +362,16 @@ legend {
 .main-navigation-wrapper {
 	width: 100%;
 	min-height: 116px;
-	background-color: #eeeeee;
+	
 
  /* Временно для сетки */	
 	margin-bottom: 18px;
 }
 
 .container {
-	width: 1160px;
+	width: 1200px;
 	margin: 0 auto;
-	padding: 0 10px;
+	padding: 0 20px;
 }
 
 .main-navigation-wrapper .container {
@@ -411,10 +451,13 @@ h1 {
 	text-align: center;
 }
 
-.container-title {
-	margin-bottom: 60px;
+.container-title {	
+	margin-bottom: 60px;	
 	padding: 0;
   	margin: 0;
+  	min-height: 240px;
+  	background: #eeeeee;
+
 }
 
 .sorting-type,

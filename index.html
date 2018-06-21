@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="main-header">
-      <nav class="main-navigation">
-        
 
-      <div class="main-navigation-wrapper">
-        <div class="container">
+      <div class="container">
+      <nav class="main-navigation">        
+
+      <!-- <div class="main-navigation-wrapper"> -->
+        <!-- <div class="container"> -->
         <a class="main-header-logo">
           <img src="img/index-logo.svg" alt="Логотип студии Nerd's">          
         </a>    
@@ -28,14 +29,16 @@
       <ul class="user-navigation">
         <li class="cart"><a href="cart.html">Корзина</a></li>
       </ul>
-        </div>
-      </div>
+        <!-- </div>
+      </div> -->
       </nav>
+      </div>
     </header>
 
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Дизайн-студия Nerd's</h1>
       <section class="advantages">
+        <div class="container">
         <h2 class="visually-hidden">Наши преимущества</h2>
 
         
@@ -86,10 +89,11 @@
             <!-- Здесь будет слайдер -->
 
         </ul>
-
+        </div>
       </section>
 
       <section class="services">
+        <div class="container">
         <h2 class="visually-hidden">Услуги</h2>        
         <ul class="services-list">
           <li class="services-item services-item-websites">
@@ -122,10 +126,14 @@
               <a href="#" class="button button-yellow">Заказать</a>
             </p>
           </li>
-        </ul>        
+        </ul>
+        </div>        
       </section>
 
+      
       <section class="about-us">
+        <div class="container">
+        
         <h2 class="visually-hidden">О нас</h2>
         <div class="about-us-wrapper">
         <section class="about-us-description">
@@ -139,7 +147,9 @@
           <li>Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
             </div>
-          </section>
+
+        
+      </section>
 
           <section class="about-us-info">
           <figure class="about-us-image">
@@ -162,12 +172,15 @@
             </div>
           </section>
         </div>
+      </div>
       </section>
+     
 
 
 
 
         <section class="partners">
+          <div class="container">
             <h2 class="visually-hidden">Наши партнеры</h2>
             <ul class="partners-list">
                 <li class="partners-item"><a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/partner-1.png" width="190px" alt="Партнер HTML Academy"></a></li>
@@ -175,9 +188,11 @@
                 <li class="partners-item"><a href="#"><img src="img/partner-3.png" width="190px" alt="Партнер магазин Пинк"></a></li>
                 <li class="partners-item"><a href="#"><img src="img/partner-4.png" width="180px" alt="Партнер магазин Мишка"></a></li>
             </ul>
+          </div>
         </section>
 
          <section class="contacts">
+          <div class="container">
             <h2 class="visually-hidden">Как до нас добраться</h2>
 
             <div class="contacts-info">
@@ -193,6 +208,8 @@
                 <a href="#" class="button">Напишите нам</a>
             </p>
             </div>
+          </div>
+
         </section>
 
     </main>
