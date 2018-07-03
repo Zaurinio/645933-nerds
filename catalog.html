@@ -50,8 +50,8 @@
             <li><a href="#">По названию</a></li>
           </ul>
           <ul class="sorting-direction">
-            <li><a href="#">По убыванию</a></li>
-            <li><a href="#">По возрастанию</a></li>
+            <li><a class="sorting-down" href="#">По убыванию</a></li>
+            <li><a class="sorting-up" href="#">По возрастанию</a></li>
           </ul>
         
         </header>
@@ -62,13 +62,30 @@
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <h2 class="visually-hidden">Фильтр товаров</h2>
 
-        <input type="range" name="filter-price" min="1" max="15000">
+        <!-- <input type="range" name="filter-price" min="1" max="15000"> -->
 
-        <fieldset>
+        <fieldset class="filter-item filter-item-bar">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+          </div>
+        </div>
+      </fieldset>
+
+        <fieldset class="filter-item filter-item-radio">
           <legend>Сетка:</legend>
           <ul>
             <li class="filter-option">
-              <input type="radio" name="grid-type" value="adaptive" class="visually-hidden filter-input filter-input-radio" id="filter-adaptive">
+              <input type="radio" name="grid-type" value="adaptive" class="visually-hidden filter-input filter-input-radio" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li class="filter-option">
@@ -82,7 +99,7 @@
           </ul>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="filter-item filter-item-radio">
           <legend>Особенности:</legend>
           <ul>
             <li class="filter-option">
@@ -119,78 +136,92 @@
               <li>
                 <article class="catalog-item">
                   <figure class="catalog-image">
-                    <img src="img/pattern-sedona.jpg" width="200" height="300" alt="Шаблон Седона">
+                    <img src="img/pattern-sedona.jpg" width="360" height="616" alt="Шаблон Седона">
                   </figure>
+                  
                   <div class="catalog-item-info">
+                    <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Sedona</h3>
-                    <p class="catalog-item-description">Информационный сайт для туристов</p>
+                    <p class="catalog-item-description">Информационный сайт<br> для туристов</p>
                     <a href="#" class="catalog-item-price button">9 900 РУБ.</a>
+                    </div>
                   </div>
+                  
                 </article>
               </li>
 
               <li>
                 <article class="catalog-item">
                   <figure class="catalog-image">
-                    <img src="img/pattern-pink.jpg" width="200" height="300" alt="Шаблон Пинк">
+                    <img src="img/pattern-pink.jpg" width="360" height="616" alt="Шаблон Пинк">
                   </figure>
                   <div class="catalog-item-info">
+                    <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Pink App</h3>
                     <p class="catalog-item-description">Продуктовый лендинг предложения для IOS и Android</p>
                     <a href="#" class="catalog-item-price button">9 900 РУБ.</a>
                   </div>
+                </div>
                 </article>
               </li>
 
               <li>
                 <article class="catalog-item">
                   <figure class="catalog-image">
-                    <img src="img/pattern-borodinski.jpg" width="200" height="300" alt="Шаблон Барбершоп">
+                    <img src="img/pattern-borodinski.jpg" width="360" height="616" alt="Шаблон Барбершоп">
                   </figure>
                   <div class="catalog-item-info">
+                    <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Barbershop</h3>
-                    <p class="catalog-item-description">Сайт салоны красоты. Для мужчин, да.</p>
+                    <p class="catalog-item-description">Сайт салоны красоты.<br> Для мужчин, да.</p>
                     <a href="#" class="catalog-item-price button">9 900 РУБ.</a>
                   </div>
+                </div>
                 </article>
               </li>
 
               <li>
                 <article class="catalog-item">
                   <figure class="catalog-image">
-                    <img src="img/pattern-mishka.jpg" width="200" height="300" alt="Шаблон Мишка">
+                    <img src="img/pattern-mishka.jpg" width="360" height="616" alt="Шаблон Мишка">
                   </figure>
                   <div class="catalog-item-info">
+                    <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Mishka</h3>
-                    <p class="catalog-item-description">Интернет-магазин вязаных игрушек</p>
+                    <p class="catalog-item-description">Интернет-магазин<br> вязаных игрушек</p>
                     <a href="#" class="catalog-item-price button">9 900 РУБ.</a>
                   </div>
+                </div>
                 </article>
               </li>
 
               <li>
                 <article class="catalog-item">
                   <figure class="catalog-image">
-                    <img src="img/pattern-aplus.jpg" width="200" height="300" alt="Шаблон A Plus">
+                    <img src="img/pattern-aplus.jpg" width="360" height="616" alt="Шаблон A Plus">
                   </figure>
                   <div class="catalog-item-info">
+                    <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">A Plus</h3>
                     <p class="catalog-item-description">Лендинг курсов повышения квалификации</p>
                     <a href="#" class="catalog-item-price button">9 900 РУБ.</a>
                   </div>
+                </div>
                 </article>
               </li>
 
               <li>
                 <article class="catalog-item">
                   <figure class="catalog-image">
-                    <img src="img/pattern-kvast.jpg" width="200" height="300" alt="Шаблон Кваст">
+                    <img src="img/pattern-kvast.jpg" width="360" height="616" alt="Шаблон Кваст">
                   </figure>
                   <div class="catalog-item-info">
+                    <div class="catalog-item-wrapper">
                     <h3 class="catalog-item-title">Кваст</h3>
                     <p class="catalog-item-description">Промо-сайт производителя крафтового кваса</p>
                     <a href="#" class="catalog-item-price button">9 900 РУБ.</a>
                   </div>
+                </div>
                 </article>
               </li>
           </ul>
