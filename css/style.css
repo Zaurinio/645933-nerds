@@ -1169,3 +1169,137 @@ a.sorting-up {
 .statistics-percentage {
 	font-size: 30px;
 }
+
+.popup {
+  position: fixed;
+  display: none;
+  top:200px;
+  left: 50%;
+  width: 960px;
+  margin-left: -480px;
+  padding: 80px;
+  padding-top: 68px;
+  background-color: #ffffff;
+  box-shadow: 0px 20px 40px 0px rgba(0, 1, 0, 0.75);
+  z-index: 5;
+}
+
+.form-write-us input:focus::placeholder,
+.form-write-us textarea:focus::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
+.form-write-us input:invalid,
+.form-write-us textarea:invalid {
+  color:#fb565a;
+  border: 1px solid #fb565a;
+}
+
+.modal-close {
+  position: absolute;
+  top: 82px;
+  left: 846px;
+  width: 21px;
+  height: 21px;
+  background-color: #ffffff;
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  border: none;
+  opacity: 0.6;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:active {
+  opacity: 0.3;
+}
+
+.write-us-frame {
+  border: none;
+  padding-left: 16px;
+}
+
+.write-us-frame label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.container-modal {
+  width: 780;
+}
+
+.modal-flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+}
+
+.modal-flex .modal-block:first-child {
+  margin-right: 40px;
+}
+
+.modal-flex .modal-block:last-child {
+  margin-top: 34px;
+}
+
+.modal-block input {
+  width: 360px;
+  height: 50px;
+  padding-left: 16px;
+  line-height: 45px;
+}
+
+.modal-block textarea {
+  width: 760px;
+  height: 114px;
+  padding-left: 16px;
+  line-height: 40px;
+  background-color: #ffffff;
+  resize: vertical;
+}
+
+.modal-block input,
+.modal-block textarea {
+  margin-left: 0px;
+  border: 2px solid #d7dcde;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.modal-block input:hover,
+.modal-block textarea:hover {
+  border: 2px solid #b4b9bb;
+}
+
+.modal-block input:focus,
+.modal-block textarea:focus {
+  border: 2px solid #000000;
+}
+
+.send {
+  width: 260px;
+  margin-left: 20px;
+  margin-top: 34px;
+}
+
+.seemore {
+  display: block;
+  width: 240px;
+  padding: 13px 0;
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: #fb565a;
+}
+
+.seemore:active {
+  color: rgba(255,255,255,0.3);
+  background-color: #d7373b;
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
+}
