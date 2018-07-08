@@ -88,7 +88,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a {
-	padding-right: 46px;
+	padding-right: 48px;
 }
 
 .site-navigation-current {
@@ -193,11 +193,9 @@ input[type="radio"].visually-hidden {
 
   text-align: center;
   font-size: 0;
-  transform: translateX(-50%);*/
-  
-  
+  transform: translateX(-50%);*/  
+
   text-align: center;
-  
 
 }
 
@@ -215,13 +213,27 @@ input[type="radio"].visually-hidden {
 
   	display: inline-block;
     width: 18px;
-    height: 18px;    
+    height: 18px;
     cursor: pointer;
-    background: #ffffff;  
+    background: #ffffff;
   	border-radius: 50%;
-  	position: relative;
-    
+  	position: absolute;
 }
+
+.slider-controls label:nth-child(1) {
+	top: 316px;
+	
+}
+
+.slider-controls label:nth-child(2) {
+	top: 316px;
+}
+
+.slider-controls label:nth-child(3) {
+	top: 316px;
+
+}
+
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"]:after,
 #btn-2:checked ~ .slider-controls label[for="btn-2"]:after,
