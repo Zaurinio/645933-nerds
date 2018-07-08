@@ -69,13 +69,14 @@ input[type="radio"].visually-hidden {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 26px;
+  padding-top: 24px;
 	width: 700px;
 	text-transform: uppercase;
 	margin-left: 140px;
   /*margin-left: auto;
   margin-right: auto;*/
-  padding-left: 62px; 
+  padding-left: 62px;
+  position: relative;
 }
 
 
@@ -85,12 +86,23 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.site-navigation a {
+.site-navigation li {
 	padding-right: 46px;
 }
 
 .site-navigation-current {
 	padding-right: 21px;
+}
+
+.site-navigation-current:before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	width: 75px;
+	height: 2px;
+	background-color: #fb565a;
+
 }
 
 .site-navigation a:hover,
@@ -612,7 +624,7 @@ list-style: none;
   	line-height: 55px;  	
   	padding: 0;
   	margin: 0;
-  	padding-top: 85px;
+  	padding-top: 75px;
 
 }
 
@@ -637,7 +649,7 @@ legend {
 	list-style: none;
 	position: relative;
 	margin-bottom: 17px;
-	padding-left: 40px;
+	padding-left: 38px;
 }
 
 /*.filter-item-radio .filter-option label:before {
@@ -768,7 +780,8 @@ legend {
   	flex-wrap: wrap;
   	align-items: stretch;
   	justify-content: space-between;
-  	align-content: space-between;  	
+  	align-content: space-between; 
+  	padding-bottom: 21px;
   	/*margin-top: 134px;*/
 }
 
@@ -776,6 +789,7 @@ legend {
 	margin-bottom: 35px;
 	position: relative;
 }
+
 
 .catalog-item-title {
 	font-weight: 700;
@@ -789,7 +803,7 @@ legend {
 
 .catalog-item-price {
 	font-weight: 500;
-	padding: 18px 20px;
+	padding: 16px 20px;
 	margin: 0;
 	min-width: 200px;
 }
@@ -798,6 +812,7 @@ legend {
 	padding: 0;
 	margin: 0;
 	padding-bottom: 30px;
+	line-height: 18px;
 }
 
 
@@ -807,6 +822,11 @@ legend {
 .sorting-direction a {
 	color: rgba(0,0,0,.3);
 	text-transform: uppercase;		
+}
+
+.sorting-type a {
+	font-size: 14px;
+	line-height: 18px;
 }
 
 .sorting-type a:hover,
@@ -834,6 +854,8 @@ legend {
 	line-height: 18px;
 }
 
+
+
 .pagination a:hover {
 	background-color: #dfdfdf;
 }
@@ -845,19 +867,28 @@ legend {
 
 .pagination li {
 	display: block;
-	padding-right: 11px;
+	padding-right: 12px;
 	text-transform:  uppercase;	
 }
 
 .pagination li:not(:last-child) a {
-	padding: 17px 22px;
+	padding: 16px 20px;
 	border-radius: 3px;
 }
 
 .pagination li:last-child a {
-	padding: 17px 80px;
+	padding: 16px 20px;
 	border-radius: 3px;
+	min-width: 260px;
+	text-align: center;
 }
+
+.pagination .pagination-item-current .pagination-button {
+	background-color: #ffffff;
+	border: 2px solid #dbdbdb;
+	padding: 14px 18px;
+}
+
 
 /*сеточные стили*/
 
@@ -886,7 +917,7 @@ legend {
 
 
 .user-navigation {
-	padding-top: 27px;
+	padding-top: 24px;
 	width: 160px;
 	text-transform: uppercase;
 	display: flex;
@@ -922,10 +953,7 @@ legend {
 
 .main-navigation-wrapper {
 	width: 100%;
-	
-	
-
-/*  Временно для сетки 	
+	/*  Временно для сетки 	
 	margin-bottom: 18px;*/
 }
 
@@ -1231,7 +1259,10 @@ a.sorting-up {
 
 .catalog-sorting {
 	display: flex;
-	padding: 57px 0px;
+	padding-top: 57px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 46px;
 	justify-content: flex-start;	
 	text-transform: uppercase;	
 }
@@ -1265,7 +1296,7 @@ a.sorting-up {
 	top: 13px;
 	z-index: 10;
 	left: 17px;
-	box-shadow: 24px 0 0 #ffffff, 48px 0 0 #ffffff;
+	box-shadow: 22px 0 0 #ffffff, 44px 0 0 #ffffff;
 	
 }
 
@@ -1340,6 +1371,16 @@ a.sorting-up {
   border: none;
 }
 
+.filter-item-bar legend {
+	line-height: 30px;
+	margin-bottom: 22px;
+}
+
+.filter-item-checkbox legend {
+	margin-bottom: 16px;
+	line-height: 18px;
+}
+
 .filter-item ul {
 	margin: 0;
 	padding: 0;
@@ -1348,15 +1389,20 @@ a.sorting-up {
 
 .filter-item-bar {
 	margin: 0;
-	margin-bottom: 54px;
+	margin-bottom: 60px;
 	margin-top: 58px;
 	
 	
 }
 
-.filter-item-radio,
+.filter-item-radio {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+
 .filter-item-checkbox {
-	margin-bottom: 46px;
+	margin-bottom: 28px;
 	position: relative;
 }
 
@@ -1371,8 +1417,15 @@ a.sorting-up {
   line-height: 24px;
   text-transform: uppercase;
   font-weight: 700;
-  margin-bottom: 22px;
+  /*margin-bottom: 22px;*/
 }
+
+.filter-item-radio legend {
+	margin-bottom: 16px;
+}
+
+
+
 
 .range-controls {
   position: relative;
