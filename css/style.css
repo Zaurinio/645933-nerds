@@ -834,16 +834,33 @@ legend {
 }
 
 .partners {
-	margin-bottom: 74px;
+	margin-bottom: 78px;
 }
 
 .partners-list {
-	min-height: 185px;
+	
+	/*min-height: 185px;*/
+
 	display: flex;
 	justify-content: left;
 	align-items: center;
 	margin: 0;
 	padding: 0px 30px;
+	padding-top: 44px;
+	padding-bottom: 38px;
+	position: relative;
+}
+
+.partners-list li:first-child:after {
+	content: "";
+	display: inline-block;
+	position: absolute;
+	width: 2px;
+	height: 53px;
+	background-color: #eeeeee;
+	top: 60px;
+	left: 280px;
+	box-shadow: 300px 0 0 #eeeeee, 600px 0 0 #eeeeee;
 }
 
 .partners-list li {
