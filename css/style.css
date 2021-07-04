@@ -1202,6 +1202,7 @@ a.sorting-up {
 
 .popup {
   position: fixed;
+  bottom: 350px;
   display: none;
   top:200px;
   left: 50%;
